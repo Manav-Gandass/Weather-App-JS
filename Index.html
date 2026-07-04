@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - JavaScript</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🌤 JavaScript Weather Dashboard</h1>
+    </header>
+
+    <main>
+      <form id="weather-form">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name (or leave blank)"
+        />
+        <select id="units-select">
+          <option value="metric">Celsius (°C)</option>
+          <option value="imperial">Fahrenheit (°F)</option>
+        </select>
+        <button type="submit">Get Weather</button>
+      </form>
+
+      <section id="current-weather-display">
+        <p class="message">Enter a city or allow location detection.</p>
+      </section>
+
+      <section id="forecast-display"></section>
+    </main>
+
+    <footer>
+      <p>Using OpenWeatherMap API</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
